@@ -15,7 +15,7 @@ getArticlesAsync()
         ${data.items
           .map(
             (item) => `<article class="col-6 col-12-xsmall work-item">
-                                <a href="${item.link}" class="image fit thumb"><img src="${item.thumbnail}" alt="" /></a>
+                                <a href="${item.link}" class="image fit thumb article"><img src="${item.thumbnail}" alt="" /></a>
                                 <h3>${item.title}</h3>
                                 <p>${item.pubDate}</p>
                             </article>`
@@ -48,7 +48,7 @@ getProjectsAsync()
             )
             .map(
               (item) => `<article class="col-6 col-12-xsmall work-item">
-                                  <a href="${item.html_url}" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+                                  <a href="${item.html_url}" class="image fit thumb project"><img src="images/thumbs/01.jpg" alt="" /></a>
                                   <h3>${item.name}</h3>
                                   <p>${item.description}</p>
                               </article>`

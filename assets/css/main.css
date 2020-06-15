@@ -2159,6 +2159,14 @@ input[type="radio"] + label:before {
   text-align: center;
 }
 
+.image.thumb.project:after {
+  content: "View";
+}
+
+.image.thumb.article:after {
+  content: "Read";
+}
+
 .image.thumb:after {
   -moz-transition: opacity 0.2s ease-in-out;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -2167,7 +2175,7 @@ input[type="radio"] + label:before {
   border-radius: 0.35em;
   border: solid 3px rgba(255, 255, 255, 0.5);
   color: #fff;
-  content: "Read";
+
   display: inline-block;
   font-size: 0.8em;
   font-weight: 400;

@@ -41,6 +41,11 @@ getProjectsAsync()
     (data) =>
       (markupProjects = `
           ${data
+            .filter((item) =>
+              [270651052, 234942096, 272541585, 223133222, 202614557].includes(
+                item.id
+              )
+            )
             .map(
               (item) => `<article class="col-6 col-12-xsmall work-item">
                                   <a href="${item.html_url}" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>

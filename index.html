@@ -74,7 +74,7 @@
 			<p>Feel free to leave me a message and I'll get in touch with you asap.</p>
 			<div class="row">
 				<div class="col-12">
-					<form method="post" action="#">
+					<form name="contact" method="post" data-netlify="true">
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
 									placeholder="Name" /></div>
@@ -83,10 +83,11 @@
 							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
 									rows="4"></textarea></div>
 						</div>
+
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
 					</form>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
 				</div>
 			</div>
 		</section>
